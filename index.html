@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/library-book-icon.svg"
+      type="image/x-icon"
+    />
+    <title>Library App</title>
+    <link rel="stylesheet" href="styles/main.scss" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Book Library App</h1>
+
+      <form class="book-form">
+        <label for="title">
+          Title
+          <input type="text" id="title" autocomplete="off" />
+        </label>
+        <label for="author">
+          Author
+          <input type="text" id="author" autocomplete="off" />
+        </label>
+        <label for="pages">
+          Pages
+          <input type="number" id="pages" autocomplete="off" />
+        </label>
+        <button class="add-btn">Add New Book</button>
+      </form>
+
+      <section class="books-container"></section>
+    </main>
+    <footer>
+      <p>
+        Coded by
+        <a href="https://github.com/damianfe" target="_blank">
+          Dami
+        </a>
+      </p>
+    </footer>
+    <script type="module" src="src/index.ts"></script>
+  </body>
+</html>
